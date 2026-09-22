@@ -1,0 +1,39 @@
+// ============================================================
+// RESTRICCIONES PARA memoria.v
+// Tarjeta: Tang Primer 20K
+// Reloj principal: 27 MHz
+// ============================================================
+
+// --- RELOJ ---
+IO_LOC "clk" H11;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+// --- BOTÓN DE INICIO (S0) ---
+IO_LOC "start" T10;
+IO_PORT "start" PULL_MODE=UP IO_TYPE=LVCMOS33;
+
+// --- BOTONES DEL JUEGO (S4 -> LED0, S3 -> LED1, S2 -> LED2, S1 -> LED3) ---
+IO_LOC "buttons[0]" C7;
+IO_PORT "buttons[0]" PULL_MODE=UP IO_TYPE=LVCMOS33;
+
+IO_LOC "buttons[1]" D7;
+IO_PORT "buttons[1]" PULL_MODE=UP IO_TYPE=LVCMOS33;
+
+IO_LOC "buttons[2]" T2;
+IO_PORT "buttons[2]" PULL_MODE=UP IO_TYPE=LVCMOS33;
+
+IO_LOC "buttons[3]" T3;
+IO_PORT "buttons[3]" PULL_MODE=UP IO_TYPE=LVCMOS33;
+
+// --- LEDs (Activos en bajo) ---
+IO_LOC "leds[0]" C13;
+IO_PORT "leds[0]" IO_TYPE=LVCMOS33;
+
+IO_LOC "leds[1]" A13;
+IO_PORT "leds[1]" IO_TYPE=LVCMOS33;
+
+IO_LOC "leds[2]" N16;
+IO_PORT "leds[2]" IO_TYPE=LVCMOS33;
+
+IO_LOC "leds[3]" N14;
+IO_PORT "leds[3]" IO_TYPE=LVCMOS33;
